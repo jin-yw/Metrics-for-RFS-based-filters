@@ -2,6 +2,8 @@ function [OSPA2_output] = OSPA2Visualization(TrackSet1,TrackSet2, p, c, N, Time)
 % The implementation of OSPA^(2)
 % Reference:
 % M. Beard, B. T. Vo and B. Vo, "A Solution for Large-Scale Multi-Object Tracking," in IEEE Transactions on Signal Processing, vol. 68, pp. 2754-2769, 2020, doi: 10.1109/TSP.2020.2986136.
+% N: The length of the slide window.
+% Time: Simulation time line.
 TimeLength = length(Time);
 OSPA2_output = zeros(1,TimeLength);
 Nt1 = length(TrackSet1);
